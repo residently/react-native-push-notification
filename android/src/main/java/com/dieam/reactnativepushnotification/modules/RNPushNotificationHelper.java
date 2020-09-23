@@ -751,6 +751,7 @@ public class RNPushNotificationHelper {
         notif.putString("body", extras.getString(Notification.EXTRA_TEXT));
         notif.putString("tag", notification.getTag());
         notif.putString("group", original.getGroup());
+        notif.putString("channel", original.getChannelId());
         result.pushMap(notif);
       }
 
